@@ -200,7 +200,7 @@ iframe {
 }
 
 .wrap-login100 {
-  width: 1160px;
+  width: 1320px;
   background: #fff;
   border-radius: 10px;
   overflow: hidden;
@@ -220,21 +220,35 @@ iframe {
 }
 
 /*------------------------------------------------------------------
-[  ]*/
+[  
+  Imagen de Izquierda de la página
+  
+]*/
 .login100-pic {
-  width: 616px;
-  height:540px;
+  width: 50%;
 }
 
-.login100-pic img {
-  max-width: 100%;
+.img-cont{
+  width: 100%;
+  height: 130%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/images/mujer.png);
+  background-size: 90%;
+  background-repeat: no-repeat;
 }
+
+
 
 
 /*------------------------------------------------------------------
 [ Texto de Bienvenida ]*/
 .login100-form {
   width: 490px;
+  padding: 0px 40px 0px 40px;
+  margin-top: 2%;
+  margin-bottom: 4%;
 }
 
 .login100-form-title {
@@ -253,14 +267,77 @@ iframe {
   padding-bottom: 30px;
 }
 
-/*-Entradas de Forms  */
+/*-Entradas de Forms dentro de Container */
+
+.input-form-container{
+  padding-top: 20px;
+}
+
+/*------------------------------------------------------------------
+[ Tooltips -Ayudas visuales  ]*/
+
+.mensaje {
+  display:inline-block;
+  position:relative;
+  border-bottom:1px dotted #666;
+  text-align:left;
+}
+
+.mensaje .top {
+  min-width:200px; 
+  top:-20px;
+  left:50%;
+  transform:translate(-50%, -100%);
+  padding:10px 20px;
+  color:#FFFFFF;
+  background-color: #106C79;
+  font-weight:normal;
+  font-size:13px;
+  border-radius:8px;
+  position:absolute;
+  z-index:99999999;
+  box-sizing:border-box;
+  border:1px solid #000000;box-shadow:0 1px 8px rgba(0,0,0,0.5);
+  display:none;
+}
+
+.mensaje:hover .top {
+  display:block;
+}
+
+.mensaje .top i {
+  position:absolute;
+  top:100%;
+  left:50%;
+  margin-left:-12px;
+  width:24px;
+  height:12px;
+  overflow:hidden;
+}
+
+.mensaje .top i::after {
+  content:'';
+  position:absolute;
+  width:12px;
+  height:12px;
+  left:50%;
+  transform:translate(-50%,-50%) rotate(45deg);
+  background-color: #106C79;
+  border:1px solid #000000;box-shadow:0 1px 8px rgba(0,0,0,0.5);
+}
+
+.custom-tooltip {
+  background-color: aqua !important;
+  color: rgba(193, 28, 160, 0.637) !important;
+}
+
 /*---------------------------------------------*/
 .wrap-input100 {
   position: relative;
   width: 100%;
   z-index: 1;
   margin-bottom: 10px;
-  padding-top: 10px;
+  padding-top: 0px;
 }
 
 .input100 {
@@ -268,7 +345,6 @@ iframe {
   font-size: 15px;
   line-height: 1.5;
   color: #666666;
-
   display: block;
   width: 100%;
   background: #e6e6e6;
@@ -398,7 +474,7 @@ margin-left: -25px !important;
 /*------------------------------------------------------------------
 [ Responsive ]*/
 
-
+/*Controlador de formulario*/
 
 @media (max-width: 992px) {
   .wrap-login100 {
@@ -415,6 +491,21 @@ margin-left: -25px !important;
 }
 
 /*---------Ocultar imagen desde media pantalla---------------*/
+
+@media (max-width: 1019px) {
+  .wrap-login100 {
+    padding: 100px 80px 33px 80px;
+  }
+
+  .login100-pic {
+    display: none;
+  }
+
+  .login100-form {
+    width: 100%;
+  }
+}
+
 @media (max-width: 768px) {
   .wrap-login100 {
     padding: 100px 80px 33px 80px;
@@ -527,3 +618,39 @@ margin-left: -25px !important;
   font-size: 54px;
 }
 
+
+/*-Ayudas al usuario del formulario  */
+
+.tooltip-inner {
+  background-color: #106C79 !important;
+}
+
+.tooltip.bs-tooltip-left .arrow:before {
+  border-left-color: #106C79;
+}
+
+.tooltip.bs-tooltip-right .arrow:before {
+  border-right-color: #106C79;
+}
+
+/*-Captcha*/
+#Captcha-cont{
+  background-color: #abe0df;
+  border-radius: 5px;
+  padding: 4px;
+  width: 100%;
+  margin-bottom: 10px;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.g-recaptcha{
+  width: 100% !important;
+  margin: 0 auto;
+  transform: scale(0.99);
+  webkit-transform:scale(0.77);
+  position: relative;
+}

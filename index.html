@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+	<!--Google Analytics-->
+	
+
+
+
+
 	<!--Marco morado-->
 	<title>Login V1</title>
 	<meta charset="UTF-8">
@@ -10,6 +17,12 @@
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+<!--===tooltips===========Ayudas Visuales=======================================================================-->
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="bootstrap-tooltip-custom-class.css" />
+	<script src="bootstrap-tooltip-custom-class.js"></script>
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 <!--===============================================================================================-->
@@ -21,7 +34,10 @@
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-<!--===============================================================================================-->
+<!--===========reCAPTCHA============================================================================-->
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+
 </head>
 <body>
 	
@@ -52,7 +68,10 @@
 
 
 				<div class="login100-pic" data-tilt >
-					<img src="images/mujer.png" alt="IMG">
+					<div class="img-cont">
+						
+					</div>
+					
 				</div>
 				
 				<!--Formulario-->
@@ -77,34 +96,42 @@
 						Bienvenido
 				</span>
 				<span class="login100-form-subtitle fs-6" >
-					! Obtener tu firma electrónica nunca ha sido tan fácil !
+					¡ Obtener tu firma electrónica nunca ha sido tan fácil !
 				</span>
-					
-					<!--Campos de formulario-->
+			
 
-					<div class="wrap-input100 validate-input" data-validate = "Password is required">
-						<input class="input100" type="password" name="pass" placeholder="Cédula de Identidad">
+				<div class="container input-form-container text-center">
+
+					<!--Campos de formulario-->					
+					<div class="wrap-input100 validate-input" data-validate = "Cédula Requerida">
+						<input data-toggle="mensaje" title="Ingrese su número de cédula"  data-placement="right"  data-custom-class="custom-tooltip"
+						class="input100" type="number" name="pass" maxlength="10" placeholder="Cédula de Identidad">
 						<span class="focus-input100"></span>
-						<span class="symbol-input100">
+						<span class="symbol-input100" >
 							<i class="fa fa-lock" aria-hidden="true"></i>
 						</span>
 					</div>
 
 					
-					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-						<input class="input100" type="text" name="email" placeholder="Correo Electrónico">
+					<div class="wrap-input100 validate-input" data-validate = "Ingrese un correo válido: ejemplo@abc.xyz">
+						<input data-toggle="mensaje" title="Ingrese un correo de uso personal: pedro@gmail.com"  data-placement="right" class="input100" type="email" name="email" placeholder="Correo Electrónico">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-envelope" aria-hidden="true"></i>
 						</span>
 					</div>
 
-					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-						<input class="input100" type="text" name="email" placeholder="Confirmar Correo Electrónico">
+					<div class="wrap-input100 validate-input" data-validate = "Correo debe ser igual al anterior">
+						<input data-toggle="mensaje" title="Confirme su correo electrónico"  data-placement="right" class="input100" type="email" name="email" placeholder="Confirmar Correo Electrónico">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-envelope" aria-hidden="true"></i>
 						</span>
+					</div>
+
+					<!--reCaptcha-->
+					<div id="Captcha-cont">
+					<div class="g-recaptcha" data-theme="light" data-sitekey="6LcIzqQkAAAAAK3HbagcH-UrCNkTl7jtGBDJ9ck9"></div>
 					</div>
 
 					<!--Aceptar Términos y Condiciones-->
@@ -112,38 +139,34 @@
 						<input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
 						<label class="form-check-label" for="flexSwitchCheckChecked">Acepto los términos y Condiciones </label>
 					</div>
-
-					<div class="container-login100-form-btn">
+				</div>
+					<div class="container-login100-form-btn" >
 						<button class="login100-form-btn">
 							Iniciar Sesión
 						</button>
 					</div>
-
-					<div class="text-center p-t-12" >
-						<span class="txt1">
-							<i class="fa fa-long-arrow-right m-l-5"></i>
-						</span>
-						<a class="txt2" href="#">
-							Personas extranjeras o jurídicas deben realizar el proceso de forma presencial
-						</a>
-					</div>
-					<div class="text-center p-t-136" style="padding-top: 0px;">
-						<a class="txt2" href="#">Politicas de Se</a>
-					</div>
-					<div class="text-center p-t-136" style="padding-top: 0px;">
-						<a class="txt2" href="#">
-							<span>Mas informacion: 09 </span> <br>
-  							<span>Con el Aval del Banco Central del Ecuador como entidad de Certificación acreditada por ARCOTEL</span>
-						</a>
-					</div>
-
 				</form>
+
+				<br>
+				<div class="container-fluid info">
+				<div class="text-left p-t-11">
+					<a class="txt2" style="font-size: small;">
+						Con el Aval del Banco Central del Ecuador como entidad de Certificación acreditada por ARCOTEL
+						| 
+						Personas extranjeras o jurídicas deben realizar el proceso de forma presencial
+						|
+						Más información: 0967400689 - 02433412 |
+						<a class="txt2" href="#"> Politicas de Seguridad</a>
+					</a>
+				</div>
+			</div>
+
 			</div>
 		</div>
 	</div>
 	
 	<!--Boton de Whats App-->  
-		<a href="https://wa.me/numero_de_telefono" class="whatsapp-button" target="_blank">
+		<a href="https://wa.me/0967400689" class="whatsapp-button" target="_blank">
 			<i class="fa fa-whatsapp"></i>
   		</a>
 	
@@ -166,6 +189,17 @@
 	</script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
+
+<!--====Ayudas Visuales Tooltips =================================================================-->
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script>
+		$(document).ready(function(){
+		$('[data-toggle="mensaje"]').tooltip(); 
+		});
+	  </script>	
 
 </body>
 </html>

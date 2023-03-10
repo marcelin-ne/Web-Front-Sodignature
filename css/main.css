@@ -598,8 +598,8 @@ margin-left: -25px !important;
 /*-Boton de Contacto Whats app */
 .whatsapp-button {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 1px;
+  right: 10px;
   z-index: 999;
   background-color: green;
   color: #fff;
@@ -653,4 +653,47 @@ margin-left: -25px !important;
   transform: scale(0.99);
   webkit-transform:scale(0.77);
   position: relative;
+}
+
+
+/*Mensajes de rechazo de validacion en Login*/
+#mensajeIdentificacion {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 20px;
+}
+
+#mensajeEmail {
+  color: red;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 20px;
+}
+
+.message {
+  font: 20px Helvetica, Arial, Sans-serif;
+  display: none;
+  width: 100%;
+  padding: 20px;
+  color: #000000;
+}
+
+.error {
+  color: red;
+  font-size: 15px;
+}
+
+.success {
+  color: #28a745;
+  font-size: 15px;
+}
+
+.alert {
+  background-color: #e1756a;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+}
+
+.msm {
+  width: 35%;
+  margin-left: 35%;
 }

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<!--Herramientas Plug Ins -->
+
+	<!--Google Analytics-->
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-FQC5YNYNW9"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-FQC5YNYNW9');
+	</script>	
+
+	<!--EqualWeb-->
+	<!-- Accessibility Code for "sodignature.com" -->
+	<script> window.interdeal = { "sitekey": "3f4aed732fc16a74fa54d7482059419f", "Position": "Right", "Menulang": "ES-MX", "domains": { "js": "https://cdn.equalweb.com/", "acc": "https://access.equalweb.com/" }, "btnStyle": { "vPosition": [ "80%", null ], "scale": [ "0.8", "0.8" ], "color": { "main": "#1876c9" }, "icon": { "type": 4, "shape": "circle", "outline": false } } }; (function(doc, head, body){ var coreCall = doc.createElement('script'); coreCall.src = interdeal.domains.js + 'core/4.4.1/accessibility.js'; coreCall.defer = true; coreCall.integrity = 'sha512-tq2wb4PBHqpUqBTfTG32Sl7oexERId9xGHX2O3yF91IYLII2OwM1gJVBXGbEPaLmfSQrIE+uAOzNOuEUZHHM+g=='; coreCall.crossOrigin = 'anonymous'; coreCall.setAttribute('data-cfasync', true ); body? body.appendChild(coreCall) : head.appendChild(coreCall); })(document, document.head, document.body); </script>
+
+	<!--Pagina Web-->
+
+	<!--Marco morado-->
+	<title>Login V1</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+<!--===tooltips===========Ayudas Visuales=======================================================================-->
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="bootstrap-tooltip-custom-class.css" />
+	<script src="bootstrap-tooltip-custom-class.js"></script>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/Complete.css">
+<!--===========reCAPTCHA============================================================================-->
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+	<script src="ScriptAuth.js"></script> <!--Script de autenticación-->
+	
+
+</head>
+<body>
+	
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+
+				<div class="container navegacion">
+					<nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+						<div class="container-fluid justify-content-end" >
+							<ul class="nav nav-pills nav-fill">
+							<li class="nav-item">
+								<a class="nav-link" href="#">Inicio</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="/Menu/Ayuda">Ayuda</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link fs-6" href="#">Preguntas Frecuentes </a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Contáctos </a>
+							</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+
+
+				<div class="login100-pic" data-tilt >
+					<div class="">
+						<div class="card text-bg-dark">
+                            <img src="images/mujer.png" class="card-img" alt="...">
+                            <div class="card-img-overlay">
+                              <h5 class="card-title">FIRMA ELECTRÓNICA EN LÍNEA</h5>
+                              <p class="card-text">Estas a punto de obtener tu firma electrónica en formato archivo</p>
+                              <p class="card-text"><small>Con duración de 2 años</small></p>
+                            </div>
+                          </div>
+					</div>
+					
+				</div>
+				
+				<!--Columna 2 de ingreso de OTP-->
+                <div style="padding: 50px;">
+                
+                    	<!--Logo Sodignature y BCE-->
+				<br>	
+				
+				<div class="container logos text-center">
+					<div class="row">
+						<div class="col">
+							<a href="https://sodigsa.com/" target="_blank"></a><img src="images/logo_sodignature.png" class="img-fluid" alt="...">
+						</div>
+						<div class="col ">
+							<img src="images/logo_bce.jpeg" class="img-fluid alt="...">
+						</div>
+					</div>	
+				</div>
+					
+					
+				<span class="login100-form-title fs-1">
+						Nos importa tu seguridad 
+				</span>
+				<span class="login100-form-subtitle fs-6" >
+					Revisa tu correo electrónico para obtener tu código de seguridad
+				</span>
+			
+
+
+                <div class="card-glass">
+
+				<form class="login100-form validate-form" >
+
+                    	<!--Logo Sodignature y BCE-->
+				<br>	
+
+					@using (@Html.BeginForm("verificacionCodigo", "Auth", FormMethod.Post, new { onsubmit = "return validar()" }))
+                    {
+
+                        <p>Código de Seguridad</p>
+                        <p>Enviamos un código al correo @Session["correoUsuarioTemp"].ToString()</p>
+                        <p> El código tiene una duración de 5 minutos</p>
+                        <div>
+                            <input type="number" autocomplete="off" name="codigoOtp" class="form-control" id="codigo" style="color:black" placeholder="Código" required="" />
+                            <div>@Html.Partial("~/Views/Shared/_Flash.cshtml")</div>
+                            <label id="mensajecodigo" hidden class="col-form-label  alerta"><i class="fas fa-exclamation-circle red "></i> &nbsp; OH !!. Ingrese el codigo</label>
+                        </div>
+                        <input type="text" hidden id="identificador" class="form-control" name="identificador" value="@ViewBag.identificador" />
+
+                        <div class="row pt-5">
+                            <div class="col-md-6 pt-2">
+                                <a href="@Url.Action("ReenviarCodigo", "Auth")" style="font-size:15px;"> <i class="fa fa-send"></i> Reenviar Código</a>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="submit" class="btn btn-primary btn-block" id="btn-one">Verificar</button>
+                            </div>
+                        </div>
+                        <div class="row pt-2">
+                            <div class="col-md-6  offset-sm-6 pt-3" style="text-align:right;color:blue;">
+                                <a href="@Url.Action("TicketCorreo", "Auth")"> ¿No he recibido el código OTP?</a>
+                            </div>
+                        </div>
+
+                        <div class="clearfix"></div>
+                        <div class="separator">
+                            <div class="clearfix"></div>
+                            <br />
+                        </div>
+                    }
+                </div>
+
+				    <br>
+                </div>
+				
+
+			</div>
+		</div>
+	</div>
+	
+	<!--Boton de Whats App-->  
+	<a href="https://api.whatsapp.com/send?phone=593967400689" class="whatsapp-button" target="_blank">
+			<i class="fa fa-whatsapp"></i>
+	</a>
+
+
+	
+
+
+	
+<!--===============================================================================================-->	
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/tilt/tilt.jquery.min.js"></script>
+	<script >
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+
+
+<!--====Ayudas Visuales Tooltips =================================================================-->
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script>
+		$(document).ready(function(){
+		$('[data-toggle="mensaje"]').tooltip(); 
+		});
+	</script>	
+
+</body>
+</html>

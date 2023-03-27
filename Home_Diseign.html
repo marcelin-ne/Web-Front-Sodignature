@@ -1,0 +1,477 @@
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Iniciar Sesión | Firma Electrónica </title>
+
+    <!--Herramientas Plug Ins -->
+    <!--Google Analytics-->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FQC5YNYNW9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-FQC5YNYNW9');
+    </script>
+
+    <!--EqualWeb-->
+    <!-- Accessibility Code for "sodignature.com" -->
+    <!-- Accessibility Code for "sodignature.com" -->
+    <!--
+    <script>window.interdeal = { "sitekey": "3f4aed732fc16a74fa54d7482059419f", "Position": "Right", "Menulang": "ES-MX", "domains": { "js": "https://cdn.equalweb.com/", "acc": "https://access.equalweb.com/" }, "btnStyle": { "vPosition": ["80%", null], "scale": ["0.8", "0.8"], "color": { "main": "#1876c9" }, "icon": { "type": 4, "shape": "circle", "outline": false } } }; (function (doc, head, body) { var coreCall = doc.createElement('script'); coreCall.src = interdeal.domains.js + 'core/4.4.1/accessibility.js'; coreCall.defer = true; coreCall.integrity = 'sha512-tq2wb4PBHqpUqBTfTG32Sl7oexERId9xGHX2O3yF91IYLII2OwM1gJVBXGbEPaLmfSQrIE+uAOzNOuEUZHHM+g=='; coreCall.crossOrigin = 'anonymous'; coreCall.setAttribute('data-cfasync', true); body ? body.appendChild(coreCall) : head.appendChild(coreCall); })(document, document.head, document.body);</script>
+
+        -->
+
+
+    <link href="~/Vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+
+
+
+    <!-- Font Awesome -->
+    <link href="~/Vendors/fontawesome/css/font-awesome.min.css" rel="stylesheet" />
+
+    <!-- NProgress -->
+    <link href="~/Vendors/nprogress/nprogress.css" rel="stylesheet" />
+
+    <link href="~/Vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" />
+
+    <link href="~/Vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" />
+
+    <!-- Custom Theme Style -->
+
+    <link href="~/Content/css/custom.min.css" rel="stylesheet" />
+    <!-- <link href="~/Content/css/EstilosLogin.css" rel="stylesheet" />-->
+    <link href="~/Content/css/EstilosModal.css" rel="stylesheet" />
+    <link href="~/Content/css/EstilosModalSuccess.css" rel="stylesheet" />
+    <link href="~/Content/css/EstilosModalRechazo.css" rel="stylesheet" />
+    <!--Script -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="../../Content/js/main.js"></script>
+
+
+    <!--============================NUevo Front ===================================================================-->
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Vendors/bootstrap/dist/css/bootstrap.min.css"
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!--===tooltips===========Ayudas Visuales=======================================================================-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap-tooltip-custom-class.css" />
+    <script src="bootstrap-tooltip-custom-class.js"></script>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Vendors/animate/animate.css"
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Vendors/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Content/css/util.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/css/main.css">
+    <!--===========reCAPTCHA============================================================================-->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+
+    <!--========Para Modales========================-->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-Zf7F8iqp9XVhKj1dtR/KVdQlz38vHkt3ODm3g6yM0iQ8lOYX3q+OJZgUbWc23yy/" crossorigin="anonymous">
+
+    <!-- Bootstrap JS y dependencias de Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-G4GJ8NhN1XKzS+ZlAgfZ/ed28oJoFeDk4xQ4CKxpyivH1QubvzEYnu3a+79zZtLC" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <div class="limiter">
+        <div class="container-login100">
+            <div class="wrap-login100">
+
+                <div class="container navegacion">
+                    <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+                        <div class="container-fluid justify-content-end">
+                            <ul class="nav nav-pills nav-fill">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Ayuda</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Preguntas Frecuentes </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contáctos </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+
+
+                <div class="login100-pic" data-tilt>
+                    <div class="img-cont">
+
+                    </div>
+
+                </div>
+
+               
+
+
+                <!--Formulario-->
+                <section class="login_content">
+
+                    <!--Logos -->
+                    <div class="container logos text-center">
+                        <div class="row">
+                            <div class="col">
+                                <img src="~/Content/images/logo_sodignature.png" class="img-fluid" alt="Logo Sodignature">
+                            </div>
+                            <div class="col ">
+                                <img src="~/Content/images/logo_bce.jpeg" class="img-fluid alt="Logo Banco Central del Ecuador">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="msm">@Html.Partial("~/Views/Shared/_Flash.cshtml")</div>
+
+                    <span class="login100-form-title fs-1">
+                        Bienvenido
+                    </span>
+                    <span class="login100-form-subtitle fs-15">
+                        ¡ Obtener tu firma electrónica nunca ha sido tan fácil !
+                       <br/>
+                    </span>
+                    <span class="login100-form-subtitle fs-15">
+                        Ingrese sus datos para acceder a Sodignature 
+                    </span>
+
+
+                    <!--Campos de Formulario-->
+
+                    <div class="container input-form-container text-center">
+
+                        @using (Html.BeginForm("Login", "Auth", FormMethod.Post, new { onsubmit = "return validar()" }))
+                        {
+
+                            <div class="text-danger" style="text-align:left">
+                                <label hidden id="mensajeIdentificacion"> *Ingrese el número de identificación*</label>
+                            </div>
+
+
+
+                            <!--Ingreso de Cedulas -->
+                            <div class="wrap-input100 validate-input" data-validate="Cédula Requerida">
+                                <input data-toggle="mensaje" title="Ingrese su número de cédula" data-placement="right" data-custom-class="custom-tooltip"
+                                       class=" input100" type="text" id="identificacion" name="identificacion" maxlength="15" placeholder="Cédula de Identidad">
+                                <span class="focus-input100"></span>
+                                <span class="symbol-input100">
+                                    <i class="fa fa-lock" aria-hidden="true"></i>
+                                </span>
+                            </div>
+
+
+
+
+
+                            <!--Mail 1  -->
+                            <div class="wrap-input100 validate-input" data-validate="Ingrese un correo válido: ejemplo@abc.xyz">
+                                <input data-toggle="mensaje" title="Ingrese un correo de uso personal: pedro@gmail.com" data-placement="right"
+                                       class="form-control input100" id="email" type="email" name="correo" placeholder="Correo Electrónico"
+                                       autocomplete="off">
+                                <span class="focus-input100"></span>
+                                <span class="symbol-input100">
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                </span>
+                            </div>
+
+
+                            
+
+
+
+                            <!--Mail 2 -->
+
+                            <div class="wrap-input100 validate-input" data-validate="Correo debe ser igual al anterior">
+                                <input data-toggle="mensaje" title="Confirme su correo electrónico" data-placement="right"
+                                       class="input100" type="email" id="email2" name="email2" placeholder="Confirmar Correo Electrónico" onkeyup="habilitar()">
+                                <span class="focus-input100"></span>
+                                <span class="symbol-input100">
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                </span>
+                            </div>
+
+                            <div class="text-danger" style="text-align:left">
+                                <label hidden id="mensajeEmail">*Los correos electrónicos ingresados no coinciden </label>
+                            </div>
+
+                            <!--Mensaje de alerta de correo no valido--->
+
+                        <div class="text-danger" style="text-align:left">
+                                <span class="message error">Revise los correos electrónicos ingresados: ejemplo@abc.xyz </span>
+                                <label hidden id="mensajeCorreo"></label>
+                            </div>
+
+
+
+                            <!--ReCaptcha-->
+
+                            <div>
+                                <div class="g-recaptcha col-md-12" data-sitekey="6LcOVgYaAAAAAHmwILyhIYPztGrOndruM8ZUzs0z" style="width:0px"></div>
+                            </div>
+                            <div class="text-danger" style="text-align:center">
+                                <label hidden id="mensajeCaptcha">Por favor, seleccione la casilla</label>
+                            </div>
+
+
+                            <!--Aceptar Terminos y Condiciones -->
+                            <div class="col-md-12 pt-2 mt-1">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" name="checkTerminos" id="checkTerminos"> Acepto los términos y condiciones
+                                    </label>
+                                </div>
+
+                                <div class="text-danger" style="text-align:center">
+                                    <label id="mensajeTérmino" hidden style="font-size:14px;" class="col-form-label col-md-12 col-sm-12 text-danger  label-align">Para continuar con el proceso, es necesario aceptar los Términos y Condiciones</label>
+                                </div>
+                            </div>
+
+
+
+
+
+                            <!--Boton de Inicio de Sesion -->
+
+                            <div>
+                                <br />
+                                <div class="col-md-12" style="margin-top:5%;">
+                                    <button type="submit" id="btn-one" class="boton btn  btn-block login100-form-btn">Iniciar Sesión</button>
+                                </div>
+                            </div>
+
+
+                        }
+
+</section>
+
+                <!--FIn de Formulario -->
+
+                <div class="container-fluid info">
+                    <div class="text-left p-t-11">
+                        <a class="txt2" style="font-size: small;">
+                            Con el Aval del Banco Central del Ecuador como entidad de Certificación acreditada por ARCOTEL
+                            |
+                            Personas extranjeras o jurídicas deben realizar el proceso de forma presencial
+                            |
+                            Más información: 0967400689 - 02433412 |
+                            <a class="txt2" href="~/Content/politica.pdf" style="color:blue"> Politicas de Seguridad</a>
+                        </a>
+                    </div>
+                </div>
+
+
+
+                <!---Modal de Terminos y Condiciones-->
+
+                <div class="myModal" hidden id="miModal" name="miModal">
+                    <div class="flex" id="flex">
+                        <div class="contenido-modal" style="width: 800px; height:550px;">
+                            <div class="modal-Titulo flex">
+                                <h6 id="tituloModal" class="text-white pt-2">Términos y condiciones</h6>
+                                @*<span class="cerrarModal" onclick="cerrarModal()" id="cerrarModal">&times;</span>*@
+                            </div>
+                            <div class="modal-Cuerpo">
+                                <div style="display:block; position:relative; height: 430px; overflow:auto">
+                                    <div class="container pr-2">
+                                        <h6><strong>TÉRMINOS Y CONDICIONES DEL SERVICIO DE AUTORIDAD DE REGISTRO PARA LA EMISIÓN DE FIRMAS ELECTRÓNICAS</strong></h6>
+                                        <h6><strong>INFORMACIÓN Y ANTECEDENTES DE ECIBCE ECUADOR</strong></h6>
+                                        <p>
+                                            Banco Central del Ecuador es una entidad acreditada en el Registro Público Nacional
+                                            de Entidades de Certificación de Información y Servicios Relacionados, mediante la
+                                            resolución ARCOTEL-2018-0902 del 5 de noviembre de 2018. La Entidad de
+                                            Certificación de Información del Banco Central del Ecuador, en adelante ECIBCE, fue
+                                            inscrita el día 30 de octubre de 2018 en el Registro Público Nacional de Entidades de
+                                            Certificación de Información y Servicios Relacionados en el ACTA 1 PÁGINA 6.
+                                            La Entidad de Certificación de Información del Banco Central del Ecuador, como
+                                            prestadora de servicios de certificación electrónica, se encuentra regulada por la Ley
+                                            67/2002 de Comercio Electrónico, Firmas y Mensajes de Datos del 27 de febrero de
+                                            2002, y en el ámbito de su infraestructura de clave pública, conforme a lo estipulado en
+                                            su Declaración de Prácticas de Certificación (en adelante, DPC), y sus Políticas de
+                                            Certificación para Certificados de Firma electrónica (en adelante, PCs).
+                                            Que la DPC de la ECIBCE reconoce expresamente la posibilidad de que esta Autoridad
+                                            de Certificación puede valerse de la colaboración de terceras personas, físicas o
+                                            jurídicas. Esta colaboración se restringe exclusivamente a la ayuda en labores
+                                            administrativas, en ningún caso intervienen en la prestación de servicios de certificación,
+                                            ni proporcionan ni administran ninguno de los servicios ofrecidos por ECIBCE.
+                                            Básicamente, su función es la de colaborar en procesos de identificación de personas,
+                                            tramitación de solicitudes, desmaterialización de documentos, soporte informativo e
+                                            intermediación en la suscripción de contratos de prestación de servicios. Y aunque
+                                            hacen entrega de instrumentos de firma electrónica, estos dispositivos no se encuentran
+                                            ni activados ni incorporan claves de usuario. Este documento, la DPC y su adenda
+                                            detallan pormenorizadamente las funciones que se llevan a cabo por estas entidades
+                                            colaboradoras.
+                                            Que en el ámbito de la Infraestructura de Clave Pública de la ECIBCE (en adelante,
+                                            PKI), estas entidades colaboradoras son calificadas como Terceros Vinculados a la
+                                            ECIBCE (en adelante, TV).
+                                            Que, con el fin de facilitar los trámites de solicitud de certificados, dotar de una atención
+                                            personalizada y próxima al lugar de residencia de los usuarios de la ECIBCE, es de
+                                            interés de esta Autoridad de Certificación contar con una red de alta capilaridad de TVs
+                                            para la gestión presencial o en línea de sus servicios.
+                                            <br /><strong>INFORMACIÓN Y ANTECEDENTES DE SODIG S.A.</strong><br />
+                                            SODIG S.A. es una Autoridad de Registro Reconocida por ECIBCE y registrada como
+                                            tercero vinculado de ECIBCE en la ARCOTEL.
+                                            <br /><strong> DECLARACIÓN Y CONOCIMIENTO DEL SERVICIO Y CONDICIONES PRESTADAS POR TUFIRMAEC.COM </strong><br />
+                                            Declaro que he leído y conozco acerca de ECIBCE y SODIG S.A.
+                                            Declaro que he leído, conozco y acepto en el ámbito de mis derechos y obligaciones los
+                                            siguientes documentos e información:
+                                            La Ley 67/2002 de Comercio Electrónico, Firmas y Mensajes de Datos con especial
+                                            atención en lo descrito en los artículos 13, 14, 15, 16 y 17 y su reglamento con especial
+                                            atención en el artículo 19
+                                            La DPC y las PCs que son documentos públicos de la ECIBCE y están disponibles en
+                                            las URLs:
+                                            https://eci.bce.ec/marco-normativo/
+                                            Toda la información, explicaciones, precios y documentación la cual ha sido
+                                            proporcionada de forma clara y por esta razón ha sido elegida por mi propia voluntad
+                                            según lo indica el portal web www.tufirmaec.com de propiedad de la empresa SODIG
+                                            S.A.
+                                            Además, declaro que toda la información, datos y documentos que he cargado es veraz,
+                                            exacta y cumple con los requisitos establecidos en el portal web: www.tufirmaec.com y
+                                            en aplicación del principio de buena fe contenido en el artículo 1562 del Código Civil
+                                            ecuatoriano.
+                                            De igual manera declaro que toda la documentación cargada en línea es de mi exclusiva
+                                            responsabilidad y en caso de comprobarse que la documentación presentada no se
+                                            ajusta a la verdad, el trámite podrá ser rechazada(según lo indica la PC de la ECiBCE
+                                            en el numeral 8.3.1), archivado y notificado a la entidad de control ARCOTEL según e
+                                            incluso, en caso de que la comprobación fuese luego de la emisión, el certificado de
+                                            firma electrónica emitido carecerá de validez alguna, de conformidad con lo establecido
+                                            en el artículo 18, artículo 19 - literal d, en el artículo 25 - literales b y c y en el artículo 34
+                                            de la Ley 67/2002 de Comercio Electrónico, Firmas y Mensajes de Datos, sin perjuicio
+                                            de las acciones legales incluyendo las de carácter penal a que hubiere lugar.
+                                            <br /><strong>AUTORIZACIONES</strong><br />
+                                            Bajo mi total y pleno conocimiento y propia voluntad declaro y reitero las siguientes
+                                            autorizaciones:
+                                            Autorizo de forma expresa a SODIG S.A. a efectuar averiguaciones para comprobar u
+                                            obtener aclaraciones e información adicional sobre el trámite de emisión de la firma
+                                            electrónica solicitada en el portal web www.tufirmaec.com
+                                            Autorizo a SODIG S.A., tercero vinculado de ECIBCE a que gestione ante la ECIBCE,
+                                            la emisión, renovación, recuperación de contraseña o revocación de la firma electrónica
+                                            a mi nombre.
+                                            Autorizo a SODIG S.A., tercero vinculado de ECIBCE para que gestione la recuperación
+                                            de clave de la firma electrónica a mi nombre, en caso de pérdida u olvido, previa
+                                            solicitud.
+
+                                            Autorizo a ECIBCE la emisión de la firma electrónica a mi nombre.
+                                            Consentimiento de uso de datos personales Usuario final:
+                                            De conformidad al artículo 7 literal a); y, artículo 8 de la Ley Orgánica de Protección de
+                                            Datos Personales, en mi calidad de Usuario Final, autorizo a SODIG S.A., para que
+                                            utilice la información proporcionada para los siguientes fines específicos:
+                                            Receptar;
+                                            Validar;
+                                            Verificar; y,
+                                            Gestionar
+                                            Solicitudes de emisión o revocación de certificados de firma electrónica.
+                                            Así mismo en mi calidad de Usuario Final autorizo que SODIG S.A., haga uso para los
+                                            fines señalados en el párrafo precedente, así como almacene mis datos personales por
+                                            un plazo de quince (15) años contados a partir de la suscripción del presente
+                                            instrumento.
+                                            <br /><strong> DERECHO DE ELIMINACIÓN DE DATOS PERSONALES</strong><br />
+                                            El Usuario en armonía y cumplimiento de lo señalado en el artículo 15 de la Ley Orgánica
+                                            de Protección de Datos Personales podrá solicitar a SODIG S.A., la eliminación de
+                                            registro de datos proporcionados por este, siguiendo el procedimiento establecido por
+                                            SODIG S.A., de tal manera que se implementará métodos y técnicas orientadas a
+                                            eliminar, hacer ilegible o dejar irreconocible de forma definitiva y segura los datos
+                                            personales proporcionados por el usuario.
+                                            SODIG S.A., tendrá un plazo de quince (15) días contados a partir de la solicitud de
+                                            eliminación de datos personales para proceder con la misma.
+                                        </p>
+
+                                    </div>
+                                </div>
+                                <div class="pt-3 pr-2" style="text-align:right">
+                                    <button onclick="cerrarModal()" class="btn btn-primary btn-sm">Aceptar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+    
+
+    <!--Modal de Terminos y Condiciones-->
+
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+    <script src="~/Scripts/Script/ScriptAuth.js"></script>
+
+    <!--Plugin-->
+    <!--Boton de Whats App-->
+    <a href="https://wa.me/0967400689" class="whatsapp-button" target="_blank">
+        <i class="fa fa-whatsapp"></i>
+
+    </a>
+
+
+
+   
+
+
+    <!--Librerias restantes-->
+    <!--===============================================================================================-->
+    <script src="~/Vendors/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/Vendors/bootstrap/dist/js/popper.js"></script>
+    <script src="~/Vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/Vendors/select2/select2.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/Vendors/tilt/tilt.jquery.min.js"></script>
+    <script>
+        $('.js-tilt').tilt({
+            scale: 1.1
+        })
+    </script>
+    <!--===============================================================================================-->
+    <script src="~/Content/js/main.js"></script>
+    <!--====Ayudas Visuales Tooltips =================================================================-->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="mensaje"]').tooltip();
+        });
+    </script>
+
+
+
+</body>
+</html>

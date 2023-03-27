@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    @*<link rel="icon" href="images/favicon.ico" type="image/ico" />*@
+
+    <title>@ViewBag.Title FACTURACION ELECTRONICA |SODIG S.A! </title>
+    <!-- Bootstrap -->
+
+    <!--Boostrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css">
+    <!-- Custom Theme Style -->
+
+    <link href="./css/layout.css" rel="stylesheet" />
+    <link href="~/Content/css/Estilos.css" rel="stylesheet" />
+    <link href="~/Content/css/Responsive.css" rel="stylesheet" />
+
+    @RenderSection("styles", required: false)
+
+    @*@Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")*@
+</head>
+
+<body class="nav-md" style="background: #fdfdfd;width: 100%;">
+
+    <div class="container body">
+        <div class="main_container">
+
+            <!---->
+            <!-- top navigation -->
+
+
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                <a class="navbar-brand" href="#">
+                    <img class="logo" src="./images/logo_sodignature.png" width="120px" />&nbsp; &nbsp;
+                </a>
+                <a class="navbar-brand" href="#">
+                    <img src="./images/logo_bce.jpeg" width="150px" />
+                </a>
+                    <div class="d-flex ms-auto" style="border: 4px solig green">
+                        <div class="container-fluid logout" style="border:2px solid">
+                            <div class="row justify-content-end">
+                            <div class="col-1 d-flex flex-column align-items-end -3">
+                                <div class="usuario-pic-container">
+                                <img src="images/Recurso.png" alt="FirmaElectronicaUsuario">
+                                </div>
+                            </div>
+                            <div class="col-4 d-flex flex-column align-items-end lg-6 md-6 sm-6" id="landing-1">
+                                <span class="welcom">Bienvenido  @Session["Identificacion"] </span>
+                            </div>
+                            <div class="col-1 d-flex flex-column align-items-end -3">
+                                <div div class="sesion-pic-container">
+                                    <a href="@Url.Action("Logout", "Auth")" ><img src="images/Recurso.png" alt="FirmaElectronicaUsuario"></a>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </nav>
+
+
+
+            <!-- /top navigation -->
+            <!-- page content -->
+            <div class="right_col" role="main" style="margin-left:0px">
+                @RenderBody()
+            </div>
+            <!-- /page content -->
+            <!-- footer content -->
+             <!--Boton de Whats App-->  
+	    <a href="https://api.whatsapp.com/send?phone=593967400689" class="whatsapp-button" target="_blank">
+            <i class="fa fa-whatsapp"></i>
+         </a>
+        </div>
+    </div>
+            <footer>
+                <div class="clearfix"></div>
+            </footer>
+            <!-- /footer content -->
+
+
+    <!-- Scripts -->
+
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="~/Vendors/jquery/jquery.min.js"></script>
+    <script src="~/Vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/Vendors/nprogress/nprogress.js"></script>
+
+    <script src="~/Vendors/Chart.js/dist/Chart.min.js"></script>
+    <!-- gauge.js -->
+    <script src="../vendors/gauge.js/dist/gauge.min.js"></script>
+
+    <script src="~/Vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+
+    <!-- Flot -->
+    <script src="~/Vendors/Flot/jquery.flot.js"></script>
+    <script src="~/Vendors/Flot/jquery.flot.pie.js"></script>
+    <script src="~/Vendors/Flot/jquery.flot.time.js"></script>
+    <script src="~/Vendors/Flot/jquery.flot.stack.js"></script>
+    <script src="~/Vendors/Flot/jquery.flot.resize.js"></script>
+
+    <!-- Flot plugins -->
+    <script src="~/Vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
+    <script src="~/Vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
+    <script src="~/Vendors/flot.curvedlines/curvedLines.js"></script>
+
+    <!-- DateJS -->
+    <script src="~/Vendors/DateJS/build/date.js"></script>
+
+    <script src="~/Vendors/moment/min/moment.min.js"></script>
+    <script src="~/Vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+
+    <script src="~/Content/js/custom.js"></script>
+    <!--Script-->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/brands.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <!-- Start of HubSpot Embed Code -->
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/20528418.js"></script>
+    <!-- End of HubSpot Embed Code -->
+
+
+    @RenderSection("scripts", required: false)
+
+    <script>
+        $(document).ready(function () {
+            $("#mostrarmodal").modal("show");
+
+        });
+    </script>
+
+</body>
+</html>
